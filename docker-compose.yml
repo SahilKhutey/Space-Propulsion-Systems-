@@ -4,7 +4,7 @@ services:
   simulation-service:
     build:
       context: .
-      dockerfile: services/simulation-service/Dockerfile
+      dockerfile: services/simulation_service/Dockerfile
     ports:
       - "8000:8000"
     environment:

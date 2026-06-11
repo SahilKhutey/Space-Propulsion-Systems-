@@ -3,7 +3,7 @@ name: Backend CI
 on:
   push:
     branches: [main, develop]
-    paths: ['core/**', 'engines/**', 'services/**', 'tests/**']
+    paths: ['core/**', 'engines/**', 'services/**', 'real-time-engine/**', 'test-suite/**']
   pull_request:
     branches: [main]
 
@@ -35,8 +35,8 @@ jobs:
           ruff check .
           ruff format --check .
       - name: Type check with Mypy
-        run: mypy core engines
+        run: mypy core engines real-time-engine
       - name: Run Unit Tests
-        run: pytest tests/ -v --cov=core --cov=engines --cov-report=xml
+        run: pytest core/ engines/ real-time-engine/ -v --cov=core --cov=engines --cov=real_time_engine --cov-report=xml
       - name: Run Physics Validation Tests
         run: pytest test-suite/ -v

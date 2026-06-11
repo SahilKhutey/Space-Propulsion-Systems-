@@ -1,0 +1,127 @@
+site_name: Propulsion Simulation Platform Docs
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
+
+nav:
+  - Home: README.md
+  - Architecture:
+      - System Overview: architecture/system_overview.md
+      - Software Architecture: architecture/software_architecture.md
+      - Service Architecture: architecture/service_architecture.md
+      - Simulation Architecture: architecture/simulation_architecture.md
+      - Data Architecture: architecture/data_architecture.md
+      - Deployment Architecture: architecture/deployment_architecture.md
+      - Scaling Architecture: architecture/scaling_architecture.md
+      - Future Architecture: architecture/future_architecture.md
+  - Mathematics:
+      - Linear Algebra: mathematics/linear_algebra.md
+      - Differential Equations: mathematics/differential_equations.md
+      - Numerical Methods: mathematics/numerical_methods.md
+      - Optimization: mathematics/optimization.md
+      - Uncertainty: mathematics/uncertainty.md
+      - Monte Carlo: mathematics/monte_carlo.md
+      - State Space Models: mathematics/state_space_models.md
+  - Physics:
+      - Classical Mechanics: physics/classical_mechanics.md
+      - Orbital Mechanics: physics/orbital_mechanics.md
+      - Plasma Physics: physics/plasma_physics.md
+      - Thermodynamics: physics/thermodynamics.md
+      - Heat Transfer: physics/heat_transfer.md
+      - Electromagnetics: physics/electromagnetics.md
+      - Propulsion Physics: physics/propulsion_physics.md
+  - Propulsion:
+      - Hall Thrusters: propulsion/hall_thrusters.md
+      - Gridded Ion: propulsion/ion_thrusters.md
+      - MPD Thrusters: propulsion/mpd_thrusters.md
+      - VASIMR: propulsion/vasimr.md
+      - Arcjet: propulsion/arcjet.md
+      - Resistojet: propulsion/resistojet.md
+      - Monopropellant: propulsion/monopropellant.md
+      - Bipropellant: propulsion/bipropellant.md
+      - Nuclear Propulsion: propulsion/nuclear_propulsion.md
+  - Thermal:
+      - Radiation: thermal/radiation.md
+      - Conduction: thermal/conduction.md
+      - Convection: thermal/convection.md
+      - Thermal Nodes: thermal/thermal_nodes.md
+  - Power:
+      - Solar: power/solar.md
+      - Batteries: power/batteries.md
+      - Distribution: power/distribution.md
+  - Mission:
+      - Rocket Equation: mission/tsiolkovsky.md
+      - Transfer Trajectories: mission/transfer_trajectories.md
+      - Delta-V Budgets: mission/delta_v_budgets.md
+      - Launch Windows: mission/launch_windows.md
+  - Orbit:
+      - Kepler: orbit/kepler.md
+      - Perturbations: orbit/perturbations.md
+      - Orbital Elements: orbit/orbital_elements.md
+  - Optimization:
+      - Overview: optimization/overview.md
+      - Genetic Algorithms: optimization/genetic_algorithms.md
+      - Bayesian Optimization: optimization/bayesian_optimization.md
+  - Digital Twin:
+      - Overview: digital_twin/overview.md
+      - State Estimation: digital_twin/state_estimation.md
+      - Telemetry Sync: digital_twin/telemetry_sync.md
+  - Visualization:
+      - Overview: visualization/overview.md
+      - Three.js: visualization/three_js.md
+      - CesiumJS: visualization/cesium.md
+  - API Reference:
+      - REST API: api/rest.md
+      - WebSocket: api/websocket.md
+      - gRPC: api/grpc.md
+  - Deployment:
+      - Docker: deployment/docker.md
+      - Kubernetes: deployment/kubernetes.md
+      - Cloud Infrastructure: deployment/cloud_infrastructure.md
+  - Security:
+      - Threat Model: security/threat_model.md
+      - Data Protection: security/data_protection.md
+      - Access Control: security/access_control.md
+  - Testing:
+      - Strategy: testing/strategy.md
+      - Automated Testing: testing/automated_testing.md
+      - Hardware-in-the-Loop: testing/hardware_in_the_loop.md
+  - Standards:
+      - Compliance: standards/compliance.md
+      - Audit Process: standards/audit_process.md
+  - Roadmap:
+      - Phase 1: roadmap/v1.md
+      - Phase 2: roadmap/v2.md
+      - Phase 3: roadmap/v3.md
+  - Decisions (ADRs):
+      - ADR-001 Simulation Engine: adr/ADR-001-simulation-engine.md
+      - ADR-002 Orbit Engine: adr/ADR-002-orbit-engine.md
+      - ADR-003 Thermal Engine: adr/ADR-003-thermal-engine.md
+      - ADR-004 AI Optimization: adr/ADR-004-ai-optimization.md
+      - ADR-005 Microservices: adr/ADR-005-microservices.md
+      - ADR-006 State Vector: adr/ADR-006-state-vector.md
+      - ADR-007 Data Retention: adr/ADR-007-data-retention.md

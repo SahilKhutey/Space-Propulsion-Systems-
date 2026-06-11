@@ -235,7 +235,7 @@ def test_optimization():
     x_opt, val = gradient.gradient_descent(obj, np.array([2.0]), learning_rate=0.1)
     assert abs(x_opt[0]) < 0.05
     
-    x_gen, val_gen = genetic.genetic_algorithm(obj, [(-5.0, 5.0)], pop_size=20, generations=20)
+    x_gen, val_gen, _ = genetic.genetic_algorithm(lambda x: -obj(x), [(-5.0, 5.0)], pop_size=20, generations=20)
     assert abs(x_gen[0]) < 1.0
 
 

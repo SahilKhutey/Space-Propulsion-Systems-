@@ -1,0 +1,11 @@
+{
+  "name": "Mars Low-Thrust Heliocentric Transfer",
+  "start_orbit": {
+    "body": "earth",
+    "altitude_km": 600
+  },
+  "end_orbit": {
+    "body": "mars",
+    "altitude_km": 500
+  }
+}

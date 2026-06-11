@@ -1,0 +1,12 @@
+{
+  "name": "Lunar Cargo Low-Thrust Spiral",
+  "start_orbit": {
+    "altitude_km": 400,
+    "inclination_deg": 28.5
+  },
+  "end_orbit": {
+    "altitude_km": 100,
+    "inclination_deg": 90.0,
+    "body": "moon"
+  }
+}

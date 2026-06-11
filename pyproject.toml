@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "propulsion-simulation-platform"
+version = "1.0.0"
+description = "Professional Aerospace Propulsion Digital Engineering & Simulation Platform"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Hybrid / Proprietary Core" }
+authors = [
+    { name = "PropSim Core Development Team", email = "dev@propsim.aero" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "matplotlib>=3.7.0",
+    "pydantic>=2.0.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.22.0",
+    "sqlalchemy>=2.0.0",
+    "psycopg2-binary>=2.9.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "pytest-asyncio>=0.21.0",
+    "ruff>=0.4.0",
+    "mypy>=1.9.0",
+    "black>=23.7.0",
+    "pre-commit>=3.3.0"
+]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I", "N"]
+ignore = []
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true

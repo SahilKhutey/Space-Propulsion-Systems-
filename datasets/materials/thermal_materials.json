@@ -1,0 +1,14 @@
+{
+  "kapton_tape": {
+    "solar_absorptivity": 0.4,
+    "ir_emissivity": 0.65
+  },
+  "white_paint": {
+    "solar_absorptivity": 0.2,
+    "ir_emissivity": 0.88
+  },
+  "gold_fep": {
+    "solar_absorptivity": 0.14,
+    "ir_emissivity": 0.05
+  }
+}

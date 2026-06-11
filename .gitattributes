@@ -1,0 +1,21 @@
+# Auto-detect text files
+* text=auto eol=lf
+
+# Python
+*.py    text eol=lf diff=python
+
+# Markdown
+*.md    text eol=lf
+
+# Markdownlint
+*.md    whitespace=-blank-before-heading
+
+# Binary
+*.png   binary
+*.jpg   binary
+*.pdf   binary
+*.whl   binary
+*.so    binary
+
+# Diff for Jupyter
+*.ipynb diff=ipynb

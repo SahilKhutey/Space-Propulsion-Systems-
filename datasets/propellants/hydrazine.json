@@ -1,0 +1,7 @@
+{
+  "name": "Hydrazine",
+  "formula": "N2H4",
+  "density_l_kg_m3": 1021.0,
+  "melting_point_k": 275.15,
+  "boiling_point_k": 386.65
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Xenon",
+  "formula": "Xe",
+  "density_s_kg_m3": 5.894,
+  "critical_temperature_k": 289.7,
+  "critical_pressure_pa": 5840000.0
+}

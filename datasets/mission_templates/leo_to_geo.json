@@ -1,0 +1,16 @@
+{
+  "name": "LEO to GEO Low-Thrust Transfer",
+  "start_orbit": {
+    "altitude_km": 400,
+    "inclination_deg": 28.5
+  },
+  "end_orbit": {
+    "altitude_km": 35786,
+    "inclination_deg": 0.0
+  },
+  "spacecraft": {
+    "dry_mass_kg": 1500,
+    "thruster": "hall_10kw",
+    "fuel_mass_kg": 400
+  }
+}

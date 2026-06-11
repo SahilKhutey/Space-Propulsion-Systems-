@@ -1,0 +1,52 @@
+# Propsim Validation & Engineering Reasoning Engine Checklist
+
+- [x] Core Math Library Updates
+  - [x] efficiency.py (thrust_from_power)
+  - [x] mass_flow.py (mass_flow_from_power)
+  - [x] tsiolkovsky.py (delta_v, propellant_for_dv, mass_ratio, propellant_fraction)
+  - [x] burn_time.py (burn_time_from_thrust, burn_time_from_delta_v)
+  - [x] propellant_budget.py (propellant_budget test signature)
+  - [x] kepler.py (orbital_velocity_circular, escape_velocity, orbital_period string body + altitude support)
+  - [x] radiation.py (stefan_boltzmann, equilibrium_temperature)
+  - [x] capacity.py (heat_capacity, temperature_rise)
+  - [x] transient.py (transient_thermal, thermal_ode_lumped)
+  - [x] solar.py (solar_array_power, required_area)
+  - [x] battery.py (state_of_charge, discharge_time)
+  - [x] eclipse.py (eclipse_duration, power_balance)
+  - [x] genetic.py (genetic_algorithm maximization, history)
+  - [x] bayesian.py (BayesianOptimizer class)
+  - [x] pinn.py (PINN neural surrogate class)
+- [x] Real-Time & Projection Engine Updates
+  - [x] state_vector.py (indices & size)
+  - [x] mission_loop.py (run method)
+  - [x] future_state.py (project output format)
+  - [x] battery_projection.py (predict_depletion)
+  - [x] failure_prediction.py (thruster_rul)
+  - [x] kalman_filter.py & ekf.py (mutating step, get_state)
+  - [x] digital_twin.py (TelemetryStream, TelemetryPacket, DigitalTwin)
+- [x] Problem-Solving Reasoning Engine
+  - [x] problem_solver/schemas.py
+  - [x] problem_solver/diagnosis/anomaly_detector.py & threshold_engine.py
+  - [x] problem_solver/root_cause_analysis/fault_tree.py & diagnostic_engine.py
+  - [x] problem_solver/recommendation_engine/advisor.py & alternatives.py
+  - [x] problem_solver/mission_failure_analysis/failure_analyzer.py
+  - [x] problem_solver/engineering_advisor/decision_intelligence.py & report_generator.py
+- [x] Test Suite Implementation
+  - [x] test-suite/pytest.ini
+  - [x] test-suite/tests/conftest.py
+  - [x] test-suite/tests/test_01_mathematics.py
+  - [x] test-suite/tests/test_02_propulsion.py
+  - [x] test-suite/tests/test_03_orbital.py
+  - [x] test-suite/tests/test_04_mission.py
+  - [x] test-suite/tests/test_05_thermal.py
+  - [x] test-suite/tests/test_06_power.py
+  - [x] test-suite/tests/test_07_realtime.py
+  - [x] test-suite/tests/test_08_projection.py
+  - [x] test-suite/tests/test_09_digital_twin.py
+  - [x] test-suite/tests/test_10_ai_optimization.py
+  - [x] test-suite/tests/test_11_end_to_end.py
+- [x] Reports Validator & README
+  - [x] reports/validators.py
+  - [x] README.md
+- [x] Verification
+  - [x] Run pytest validation suite and ensure all tests pass.

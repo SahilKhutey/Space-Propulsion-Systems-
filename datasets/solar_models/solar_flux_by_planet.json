@@ -1,0 +1,20 @@
+{
+  "mercury": {
+    "flux_w_m2": 9116
+  },
+  "venus": {
+    "flux_w_m2": 2611
+  },
+  "earth": {
+    "flux_w_m2": 1361
+  },
+  "mars": {
+    "flux_w_m2": 589
+  },
+  "jupiter": {
+    "flux_w_m2": 50.2
+  },
+  "saturn": {
+    "flux_w_m2": 15.0
+  }
+}

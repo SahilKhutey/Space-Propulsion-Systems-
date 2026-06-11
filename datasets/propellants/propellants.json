@@ -1,0 +1,22 @@
+{
+  "xenon": {
+    "molecular_mass_kg": 2.18e-25,
+    "ionization_energy_ev": 12.13
+  },
+  "krypton": {
+    "molecular_mass_kg": 1.39e-25,
+    "ionization_energy_ev": 14.0
+  },
+  "argon": {
+    "molecular_mass_kg": 6.63e-26,
+    "ionization_energy_ev": 15.76
+  },
+  "hydrazine": {
+    "molecular_mass_kg": 5.32e-26,
+    "is_monopropellant": true
+  },
+  "lh2_lox": {
+    "mixture_ratio": 6.0,
+    "is_bipropellant": true
+  }
+}

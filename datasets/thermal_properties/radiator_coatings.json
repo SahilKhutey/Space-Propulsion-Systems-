@@ -1,0 +1,10 @@
+{
+  "silver_teflon": {
+    "absorptivity": 0.08,
+    "emissivity": 0.82
+  },
+  "black_paint": {
+    "absorptivity": 0.95,
+    "emissivity": 0.9
+  }
+}

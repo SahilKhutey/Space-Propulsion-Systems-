@@ -1,0 +1,36 @@
+name: Frontend CI
+
+on:
+  push:
+    branches: [main]
+    paths: ['apps/web/**']
+  pull_request:
+    branches: [main]
+    paths: ['apps/web/**']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: apps/web/package-lock.json
+      - name: Install dependencies
+        run: npm ci
+        working-directory: apps/web
+      - name: Run Lint
+        run: npm run lint --if-present
+        working-directory: apps/web
+      - name: Run Typecheck
+        run: npm run typecheck --if-present
+        working-directory: apps/web
+      - name: Build
+        run: npm run build --if-present
+        working-directory: apps/web
+      - name: Run Tests
+        run: npm run test --if-present
+        working-directory: apps/web

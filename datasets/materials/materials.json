@@ -1,0 +1,17 @@
+{
+  "aluminum_6061": {
+    "density_kg_m3": 2700,
+    "thermal_conductivity_w_m_k": 167,
+    "specific_heat_j_kg_k": 897
+  },
+  "titanium_g5": {
+    "density_kg_m3": 4430,
+    "thermal_conductivity_w_m_k": 6.7,
+    "specific_heat_j_kg_k": 526
+  },
+  "copper": {
+    "density_kg_m3": 8960,
+    "thermal_conductivity_w_m_k": 401,
+    "specific_heat_j_kg_k": 385
+  }
+}

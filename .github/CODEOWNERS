@@ -1,0 +1,22 @@
+# Default owners for PropSim repository
+*                          @propsim/core-team
+
+# Core physics and mathematics engines
+/engines/thrust-engine/    @propsim/propulsion-leads
+/engines/thermal-engine/   @propsim/thermal-leads
+/engines/orbit-engine/     @propsim/orbit-leads
+/engines/mission-engine/   @propsim/mission-leads
+/core/physics/             @propsim/physics-leads
+/core/mathematics/         @propsim/math-leads
+
+# AI/Optimization models
+/ai/                       @propsim/ai-leads
+/services/optimization-service/  @propsim/ai-leads
+
+# Front-end and Visualizers
+/apps/web/                 @propsim/frontend-leads
+/visualization/            @propsim/frontend-leads
+
+# Security & Compliance
+/legal/                    @propsim/legal-team
+/.github/SECURITY.md       @propsim/security-team

@@ -1,0 +1,10 @@
+{
+  "standard_20_layer": {
+    "effective_emissivity": 0.015,
+    "weight_kg_m2": 0.45
+  },
+  "lightweight_10_layer": {
+    "effective_emissivity": 0.035,
+    "weight_kg_m2": 0.25
+  }
+}

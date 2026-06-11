@@ -1,0 +1,27 @@
+name: Documentation Builder
+
+on:
+  push:
+    branches: [main]
+    paths: ['docs/**', 'standards/**']
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install MkDocs
+        run: |
+          pip install mkdocs mkdocs-material mkdocs-mermaid2-plugin mkdocs-minify-plugin
+      - name: Build Docs
+        run: mkdocs build
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+        if: github.ref == 'refs/heads/main'

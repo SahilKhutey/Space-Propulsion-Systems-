@@ -1,0 +1,33 @@
+name: Security Scan
+
+on:
+  schedule:
+    - cron: '0 2 * * 1'  # Weekly Monday 02:00 UTC
+  pull_request:
+    branches: [main]
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Trivy filesystem scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: fs
+          scan-ref: .
+          severity: HIGH,CRITICAL
+      - name: Bandit (Python Security Check)
+        run: |
+          pip install bandit
+          bandit -r core/ engines/ services/ -f json -o bandit-report.json || true
+      - name: npm audit
+        run: npm audit --audit-level=high || true
+        working-directory: apps/web
+      - name: Detect secrets
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: .
+          base: ${{ github.event.repository.default_branch }}
+          head: HEAD
+        continue-on-error: true

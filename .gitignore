@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# Node / Frontend
+node_modules/
+.npm
+.yarn
+.pnp.*
+.next/
+dist/
+.vite/
+*.tsbuildinfo
+
+# IDE / Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+*.iml
+
+# Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Reports / outputs
+reports/generated/
+simulations/output/
+*.log
+*.tmp
+propsim.db
+
+# Build artifacts
+*.whl
+*.tar.gz

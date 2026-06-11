@@ -50,3 +50,9 @@
   - [x] README.md
 - [x] Verification
   - [x] Run pytest validation suite and ensure all tests pass.
+- [x] Systems Launch
+  - [x] Rename simulation-service folder to simulation_service to eliminate package naming conflicts.
+  - [x] Resolve main.py imports of the API router and uvicorn module paths.
+  - [x] Start FastAPI simulation_service backend.
+  - [x] Start Vite React frontend web app.
+  - [x] Commit and push changes to GitHub.

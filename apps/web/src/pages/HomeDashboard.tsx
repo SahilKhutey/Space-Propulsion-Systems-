@@ -5,6 +5,8 @@ import { KPICard } from '@/components/common/KPICard';
 import { AlertBanner } from '@/components/common/AlertBanner';
 import { Activity, Layers, Cpu, Bell } from 'lucide-react';
 
+import { SystemHealth } from '@/components/health/SystemHealth';
+
 export default function HomeDashboard() {
   return (
     <div className="flex flex-col gap-4">
@@ -79,7 +81,9 @@ export default function HomeDashboard() {
         </div>
 
         {/* Alert Log Widget */}
-        <div className="lg:col-span-1">
+        <div className="lg:col-span-1 flex flex-col gap-4">
+          <SystemHealth />
+
           <Card title="System Telemetry Alert Log">
             <div className="flex flex-col gap-2">
               <AlertBanner
